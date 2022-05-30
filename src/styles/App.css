@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #1f1f1f;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.filter-card {
+    height: 650px;
+    margin: 50px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #141414;
+    padding: 10px 30px;
+    width: 350px;
+}
+
+.controls label {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.filter-values {
+    float: right;
+}
+
+.text-input {
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    font-size: 0.7rem;
+    padding: 0 10px;
+    font-weight: 100;
+    color: #fff;
+    background-color: #202020;
+    margin-bottom: 10px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.controls button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(29, 28, 28);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.controls button:hover {
+    background-color: rgb(48, 48, 48);
+    color: rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out;
+}
+
+.filter-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #1c1e22;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-div {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.filtered img {
+    max-height: 700px;
+    min-height: 500px;
+}
